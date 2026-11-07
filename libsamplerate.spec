@@ -2,7 +2,7 @@
 # jackit is used by pulseaudio,
 # pulseaudio is used by wine
 %ifarch %{x86_64}
-%bcond_without compat32
+%bcond_with compat32
 %endif
 
 %bcond_without pgo
