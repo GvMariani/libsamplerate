@@ -1,0 +1,42 @@
+diff -rupN libsamplerate-0.2.2.old/tests/callback_hang_test.c libsamplerate-0.2.2/tests/callback_hang_test.c
+--- libsamplerate-0.2.2.old/tests/callback_hang_test.c	2021-05-23 16:28:23.000000000 +0200
++++ libsamplerate-0.2.2/tests/callback_hang_test.c	2026-11-03 19:23:17.176452559 +0100
+@@ -12,11 +12,10 @@
+ 
+ #include <stdio.h>
+ #include <stdlib.h>
+-#ifdef HAVE_UNISTD_H
+ #include <unistd.h>
+-#endif
+ #include <math.h>
+ 
++
+ #if HAVE_ALARM && HAVE_SIGNAL && HAVE_SIGALRM
+ 
+ #include <signal.h>
+diff -rupN libsamplerate-0.2.2.old/tests/multichan_throughput_test.c libsamplerate-0.2.2/tests/multichan_throughput_test.c
+--- libsamplerate-0.2.2.old/tests/multichan_throughput_test.c	2021-05-23 16:28:23.000000000 +0200
++++ libsamplerate-0.2.2/tests/multichan_throughput_test.c	2026-11-03 19:26:11.883885341 +0100
+@@ -14,9 +14,7 @@
+ #include <stdlib.h>
+ #include <string.h>
+ #include <time.h>
+-#ifdef HAVE_UNISTD_H
+ #include <unistd.h>
+-#endif
+ #include <math.h>
+ 
+ #ifdef _WIN32
+diff -rupN libsamplerate-0.2.2.old/tests/throughput_test.c libsamplerate-0.2.2/tests/throughput_test.c
+--- libsamplerate-0.2.2.old/tests/throughput_test.c	2021-05-23 16:28:23.000000000 +0200
++++ libsamplerate-0.2.2/tests/throughput_test.c	2026-11-03 19:27:47.365872791 +0100
+@@ -14,9 +14,7 @@
+ #include <stdlib.h>
+ #include <string.h>
+ #include <time.h>
+-#ifdef HAVE_UNISTD_H
+ #include <unistd.h>
+-#endif
+ #include <math.h>
+ 
+ #ifdef _WIN32
